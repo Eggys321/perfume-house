@@ -1,0 +1,56 @@
+:root{
+    --login-bgrc:rgba(230, 210, 255, 1);
+    --login-btn-color:rgba(141, 52, 255, 1);
+    --signup-bgrc:rgba(141, 52, 255, 1);
+    --signup-btn-color:rgba(245, 245, 245, 1);
+
+
+}
+
+.login-btn{
+    background-color: var(--login-bgrc);
+    color: var(--login-btn-color);
+    border-radius: 8px;
+    border: none;
+    height: 61px;
+    width: 314px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.sign-up-btn{
+    background-color: var(--signup-bgrc);
+    color: var(--signup-btn-color);
+    border: none;
+    border-radius: 8px;
+    height: 61px;
+    width: 140px;
+    font-weight: 500;
+    font-size: 20px;
+    /* padding: 7px, 10px, 7px, 10px; */
+
+}
+
+.crd{
+    width: 30%;
+}
+
+@media(max-width:765px){
+    
+    .crd{
+        min-width: 98%;
+        /* margin: auto; */
+        /* padding: 300px; */
+    }
+}
+@media(min-width:768px) and (max-width:1023px){
+    
+    .crd{
+        min-width: 40%;
+        display: flex;
+        justify-content: space-between;
+        /* margin-left: 0px; */
+        /* margin: auto; */
+        /* padding: 300px; */
+    }
+}

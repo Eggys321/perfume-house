@@ -1,9 +1,27 @@
-import React from 'react'
+import React from "react";
+import products from "../product.json";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Product from "../componenets/Product";
+import Cart from "../componenets/Cart";
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+  console.log(products);
 
-export default Home
+  return (
+    <>
+      <main className="container py-3">
+        <section className="row justify-content-between">
+          <div className="col-lg-8">
+           <Product/>
+          </div>
+          <div className="col-lg-3">
+            <Cart/>
+          </div>
+        </section>
+      </main>
+    </>
+  );
+};
+
+export default Home;
