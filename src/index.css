@@ -1,56 +1,105 @@
-:root{
-    --login-bgrc:rgba(230, 210, 255, 1);
-    --login-btn-color:rgba(141, 52, 255, 1);
-    --signup-bgrc:rgba(141, 52, 255, 1);
-    --signup-btn-color:rgba(245, 245, 245, 1);
-
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: myFirstFont;
+  src: url("./assets/fonts/Fontspring-DEMO-neurialgrotesk-regular.otf");
+}
+:root {
+  --login-bgrc: rgba(230, 210, 255, 1);
+  --login-btn-color: rgba(141, 52, 255, 1);
+  --purple-bgrc: rgba(141, 52, 255, 1);
+  --signup-btn-color: rgba(245, 245, 245, 1);
 }
 
-.login-btn{
-    background-color: var(--login-bgrc);
-    color: var(--login-btn-color);
-    border-radius: 8px;
-    border: none;
-    height: 61px;
-    width: 314px;
-    font-weight: 500;
+
+/* Nav */
+
+.login-btn {
+  background-color: var(--login-bgrc);
+  color: var(--login-btn-color);
+  border-radius: 8px;
+  border: none;
+  height: 61px;
+  width: 314px;
+  font-family: myFirstFont;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.sign-up-btn {
+  background-color: var(--purple-bgrc);
+  color: var(--signup-btn-color);
+  border: none;
+  border-radius: 8px;
+  height: 61px;
+  width: 140px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: myFirstFont;
+}
+
+/* Nav ends here */
+/* sign In */
+.sign-in-container {
+  background-image: url("./assets/auth-bgri-jpg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 1024px;
+}
+/* cards */
+.card-container {
+  width: 30%;
+}
+.card-img {
+  height: 256.62px;
+  width: 256.62px;
+}
+.card-title {
+  font-size: 15.97px;
+  font-weight: 700;
+  line-height: 22.81px;
+  font-family: myFirstFont;
+}
+.add-to-cart-btn {
+  background-color: var(--purple-bgrc);
+  color: rgba(254, 254, 255, 1);
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.card-price{
+
+  font-size: 20.88px;
+  font-family: myFirstFont;
+}
+.card-discount-price{
+  color: rgba(162, 162, 162, 1);
+}
+
+
+@media (max-width: 765px) {
+  .card-container {
+    min-width: 98%;
+  }
+  .card-title {
     font-size: 20px;
+    font-weight: 700;
+  }
+  .card-img {
+    height: 335.55px;
+    width: 335.55px;
+  }
 }
-
-.sign-up-btn{
-    background-color: var(--signup-bgrc);
-    color: var(--signup-btn-color);
-    border: none;
-    border-radius: 8px;
-    height: 61px;
-    width: 140px;
-    font-weight: 500;
-    font-size: 20px;
-    /* padding: 7px, 10px, 7px, 10px; */
-
-}
-
-.crd{
-    width: 30%;
-}
-
-@media(max-width:765px){
-    
-    .crd{
-        min-width: 98%;
-        /* margin: auto; */
-        /* padding: 300px; */
-    }
-}
-@media(min-width:768px) and (max-width:1023px){
-    
-    .crd{
-        min-width: 40%;
-        display: flex;
-        justify-content: space-between;
-        /* margin-left: 0px; */
-        /* margin: auto; */
-        /* padding: 300px; */
-    }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card-container {
+    min-width: 48%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-img {
+    height: 335.55px;
+    width: 335.55px;
+  }
 }

@@ -6,11 +6,11 @@ import Product from "../componenets/Product";
 import Cart from "../componenets/Cart";
 
 const Home = () => {
-  console.log(products);
+  // console.log(products);
 
   return (
     <>
-      <main className="container py-3">
+      <main className="container py-4">
         <section className="row justify-content-between">
           <div className="col-lg-8">
            <Product/>
