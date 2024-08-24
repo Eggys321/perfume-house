@@ -43,7 +43,11 @@
   background-image: url("./assets/auth-bgri-jpg.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  min-height: 1024px;
+  /* min-height: 1024px; */
+  min-height: 100vh;
+}
+.sign-in-container >section{
+  gap: 7rem;
 }
 /* cards */
 .card-container {
@@ -80,6 +84,15 @@
 
 
 @media (max-width: 765px) {
+  .sign-in-container {
+    background-image: none;
+    min-height: 100vh;
+  }
+  .sign-in-container >section{
+    min-width: 100%;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
   .card-container {
     min-width: 98%;
   }

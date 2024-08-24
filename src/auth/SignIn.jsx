@@ -7,10 +7,10 @@ import Row from "react-bootstrap/Row";
 const SignIn = () => {
   return (
     <>
-      <main className="sign-in-container ps-5">
-        <section className="container d-flex justify-content-center ps-5 pt-5  gap-5">
-          <h2>SignIn</h2>
-          <Form className="bg-light p-3 border rounded">
+      <main className="sign-in-container ">
+        <section className="container w-75 d-flex justify-content-cent  pt-5  flex-wrap">
+          <h2 className="">SignIn</h2>
+          <Form className="bg-light p-5 border rounded shadow-lg ">
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Email</Form.Label>
@@ -33,6 +33,63 @@ const SignIn = () => {
               <Form.Control placeholder="Apartment, studio, or floor" />
             </Form.Group>
 
+            <Row className="mb-3">
+              <Form.Group as={Col} controlId="formGridCity">
+                <Form.Label>City</Form.Label>
+                <Form.Control />
+              </Form.Group>
+
+              <Form.Group as={Col} controlId="formGridState">
+                <Form.Label>State</Form.Label>
+                <Form.Select defaultValue="Choose...">
+                  <option>Choose...</option>
+                  <option>...</option>
+                </Form.Select>
+              </Form.Group>
+
+              <Form.Group as={Col} controlId="formGridZip">
+                <Form.Label>Zip</Form.Label>
+                <Form.Control />
+              </Form.Group>
+            </Row>
+            <Row className="mb-3">
+              <Form.Group as={Col} controlId="formGridCity">
+                <Form.Label>City</Form.Label>
+                <Form.Control />
+              </Form.Group>
+
+              <Form.Group as={Col} controlId="formGridState">
+                <Form.Label>State</Form.Label>
+                <Form.Select defaultValue="Choose...">
+                  <option>Choose...</option>
+                  <option>...</option>
+                </Form.Select>
+              </Form.Group>
+
+              <Form.Group as={Col} controlId="formGridZip">
+                <Form.Label>Zip</Form.Label>
+                <Form.Control />
+              </Form.Group>
+            </Row>
+            <Row className="mb-3">
+              <Form.Group as={Col} controlId="formGridCity">
+                <Form.Label>City</Form.Label>
+                <Form.Control />
+              </Form.Group>
+
+              <Form.Group as={Col} controlId="formGridState">
+                <Form.Label>State</Form.Label>
+                <Form.Select defaultValue="Choose...">
+                  <option>Choose...</option>
+                  <option>...</option>
+                </Form.Select>
+              </Form.Group>
+
+              <Form.Group as={Col} controlId="formGridZip">
+                <Form.Label>Zip</Form.Label>
+                <Form.Control />
+              </Form.Group>
+            </Row>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridCity">
                 <Form.Label>City</Form.Label>
