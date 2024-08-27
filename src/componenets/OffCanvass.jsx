@@ -19,14 +19,14 @@ const OffCanvass = ({ name, ...props }) => {
         <div className="pt-5">
         <button className="login-btn w-100 mb-2">
             {" "}
-            <Link to="" className="text-decoration-none login-btn">
+            <Link to="/auth/signin" className="text-decoration-none login-btn">
               {" "}
               Log In{" "}
             </Link>{" "}
           </button>
           <button className="sign-up-btn w-100">
             {" "}
-            <Link to="" className="text-decoration-none sign-up-btn ">
+            <Link to="/auth/signup" className="text-decoration-none sign-up-btn ">
               {" "}
               Sign Up{" "}
             </Link>{" "}

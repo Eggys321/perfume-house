@@ -11,12 +11,12 @@ const Home = () => {
   return (
     <>
       <main className="container py-4">
-        <section className="row justify-content-between">
+        <section className="row">
           <div className="col-lg-8">
-           <Product/>
+            <Product />
           </div>
-          <div className="col-lg-3">
-            <Cart/>
+          <div className="col-lg-4">
+            <Cart />
           </div>
         </section>
       </main>

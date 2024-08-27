@@ -90,7 +90,7 @@ const SignIn = () => {
                 <Form.Control />
               </Form.Group>
             </Row>
-            <Row className="mb-3">
+            {/* <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridCity">
                 <Form.Label>City</Form.Label>
                 <Form.Control />
@@ -108,7 +108,7 @@ const SignIn = () => {
                 <Form.Label>Zip</Form.Label>
                 <Form.Control />
               </Form.Group>
-            </Row>
+            </Row> */}
 
             <Button variant="primary" type="submit">
               Submit

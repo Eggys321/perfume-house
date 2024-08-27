@@ -60,7 +60,7 @@
 .card-title {
   font-size: 15.97px;
   font-weight: 700;
-  line-height: 22.81px;
+  /* line-height: 22.81px; */
   font-family: myFirstFont;
 }
 .add-to-cart-btn {
@@ -80,6 +80,13 @@
 }
 .card-discount-price{
   color: rgba(162, 162, 162, 1);
+}
+
+/* cart section */
+.cart-container > h3{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 
