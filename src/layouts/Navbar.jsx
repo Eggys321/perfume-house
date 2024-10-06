@@ -21,7 +21,7 @@ const Navbar = () => {
             <Link to="/auth/signin" className="text-decoration-none login-btn">
               Log In
             </Link>
-          </button>
+          </button>   
           <button className="sign-up-btn w-75">
             <Link to="/auth/signup" className="text-decoration-none sign-up-btn ">
               Sign Up

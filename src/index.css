@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
 @font-face {
   font-family: myFirstFont;
   src: url("./assets/fonts/Fontspring-DEMO-neurialgrotesk-regular.otf");
@@ -8,6 +11,8 @@
   --login-btn-color: rgba(141, 52, 255, 1);
   --purple-bgrc: rgba(141, 52, 255, 1);
   --signup-btn-color: rgba(245, 245, 245, 1);
+  --ff-poppins: "Poppins", sans-serif;
+  --ff-outfits: "Outfit", sans-serif;
 }
 
 
@@ -49,6 +54,11 @@
 .sign-in-container >section{
   gap: 7rem;
 }
+.add-to-cart-btn:disabled, .add-to-cart-btn.disabled {
+  /* opacity: 0.65; */
+  pointer-events: none;
+  background-color: rgba(210, 210, 210, 1);
+}
 /* cards */
 .card-container {
   width: 30%;
@@ -88,7 +98,114 @@
   font-weight: 600;
   font-size: 24px;
 }
+.product-qty-dec{
+  background-color: rgba(162, 162, 162, 1);
+  width:18.61px;
+  height:18.61px;
+  padding: 9.3px;
+  border-radius: 2.79px;
+  border: none;
+}
+.product-qty-inc{
+  background-color: var(--purple-bgrc);
+  color: white;
+  width:18.61px;
+  height:18.61px;
+  padding: 9.3px;
+  border-radius: 2.79px;
+  border: none;
 
+}
+.add-cart,
+.subtract-cart {
+  width: 18.61px;
+  height: 18.61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  border: none;
+  color: white;
+}
+
+.add-cart {
+  background-color: #8d34ff;
+}
+
+.subtract-cart {
+  background-color: #d2d2d2;
+}
+
+.cart-number {
+  font-family: var(--ff-poppins);
+  font-weight: 400;
+  font-size: 12.1px;
+}
+
+.cart-price {
+  font-family: var(--ff-poppins);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.remove-cart {
+  border: 1px solid #ff4034;
+  width: 87.33px;
+  height: 26.36px;
+  border-radius: 3.64px;
+  font-size: 12.73px;
+  font-weight: 500;
+  font-family: neural-gotesk;
+  background-color: white;
+  color: #ff4034;
+  /* margin-right: 2rem; */
+}
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.checkout p,
+.checkout h4 {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.checkout-title {
+  font-family: neural-gotesk;
+  font-weight: 500;
+  font-size: 14.52px;
+  color: #5a5a5a;
+}
+.checkout-price {
+  font-family: neural-gotesk;
+  font-weight: 800;
+  font-size: 16px;
+  color: #000000;
+}
+
+.checkout-button {
+  height: 44px;
+  border-radius: 8px;
+  border: none;
+  background-color: #8d34ff;
+  color: white;
+  font-family: neural-gotesk;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
 
 @media (max-width: 765px) {
   .sign-in-container {

@@ -18,18 +18,14 @@ const OffCanvass = ({ name, ...props }) => {
       <Offcanvas className="container" show={show} onHide={handleClose} {...props}>
         <div className="pt-5">
         <button className="login-btn w-100 mb-2">
-            {" "}
             <Link to="/auth/signin" className="text-decoration-none login-btn">
-              {" "}
-              Log In{" "}
-            </Link>{" "}
+              Log In
+            </Link>
           </button>
           <button className="sign-up-btn w-100">
-            {" "}
             <Link to="/auth/signup" className="text-decoration-none sign-up-btn ">
-              {" "}
-              Sign Up{" "}
-            </Link>{" "}
+              Sign Up
+            </Link>
           </button>
         </div>
       </Offcanvas>
