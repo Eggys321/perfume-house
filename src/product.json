@@ -2,7 +2,7 @@
     {   
         "id":1,
         "image":"https://res.cloudinary.com/eguono/image/upload/v1724144617/perfume%20house%20jpg/Ralph_Lauren_Perfume_z8v8mw.jpg",
-        "title":"Ralph Lauren Perfume",
+        "title":"Ralph Perfume",
         "rating":5.0,
         "price":"3000",
         "dicountPrice":"# 4,000"
@@ -10,7 +10,7 @@
     {   
         "id":2,
         "image":"https://res.cloudinary.com/eguono/image/upload/v1724144617/perfume%20house%20jpg/Oud_Touch_Franck_Oliver_snhuff.jpg",
-        "title":"Oud Touch Franck Oliver",
+        "title":"Oud Touch Franck",
         "rating":5.0,
         "price":"3000",
         "dicountPrice":"4,000"
@@ -36,7 +36,7 @@
     {   
         "id":5,
         "image":"https://res.cloudinary.com/eguono/image/upload/v1724144617/perfume%20house%20jpg/Aventos_Blue_for_Him_sg2dxx.jpg",
-        "title":"Aventos Blue for Him",
+        "title":"Aventos Blue",
         "rating":5.0,
         "price":"3000",
         "dicountPrice":"4,000"       
